@@ -6,3 +6,13 @@ GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY '123456';
 FLUSH PRIVILEGES;
 数据库连接命令：
 mysql -h vaiwan.com -u root -p -P 1234 //端口号地址
+
+# macOS Monterey Docker 运行
+
+```shell
+make build subdomain={subdomain} addr={宿主机IP:端口}
+# 示例
+make build subdomain=yongjitest addr=30.23.224.170:7777
+
+make run
+```
